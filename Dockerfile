@@ -14,7 +14,7 @@ RUN pip3 install rshell
 
 RUN cd /root && git clone --recursive https://github.com/espressif/esp-idf.git
 WORKDIR /root/esp-idf
-RUN git checkout 4c81978a3e2220674a432a588292a4c860eef27b
+RUN git checkout 7e8e249990ec491ec15990cf95b6d871a66cf64a
 RUN git submodule update --init --recursive
 RUN ./install.sh
 
